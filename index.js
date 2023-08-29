@@ -49,7 +49,7 @@ async function main() {
   svgInfo.setColor(answers.color);
   svgInfo.setTextColor(answers.textColor);
 
-  const file = './logo/logo.svg'; // Define the file path
+  const file = './logo/logo.svg';
   try {
     await writeFile(file, svgInfo.render());
     console.log('Successfully created SVG');
